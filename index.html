@@ -16,6 +16,7 @@
 
     <!-- Theme CSS - Includes Bootstrap -->
     <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body id="page-top">
     <!-- Navigation -->
@@ -103,7 +104,6 @@
                 <p>As with any machine we want to be able to open it up and see what’s going on. This is where the graphics module comes in. This module will require some input which is used to create some graphics. These graphics could be bar graphs, line graphs or just some random image that will help the user understand his system, and or data.
                 Money Watch encourages creativity in order to make discoveries!</p>
             </div>
-            <!-- <img src="https://mdbootstrap.com/wp-content/uploads/2016/11/admin-dashboard-bootstrap.jpg" alt="Material Design for Bootstrap - dashboard" class="img-fluid"> -->
           </div>
 
           <!--Footer-->
@@ -203,6 +203,126 @@
         </div>
       </div>
     </section>
+
+    <!-- About Section -->
+    <section class="page-section bg-primary" id="about">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-4" id="UmairRaja">
+            <img src="img/UmairRaja.png" alt="Umair Raja" class="img-fluid image--cover">
+            <button type="button" class="btn btn-light btn-xl waves-effect waves-light" data-toggle="modal" data-target="#proof">Proof!</button>
+          </div>
+          <div class="col-lg-8 text-white">
+
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      What is your background as it relates to investing/trading?
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body bg-secondary">
+                    I have competed in numerous trading competitions such as the BP Canada Trading Competition where I placed top 10, the Western Invitational Trading Competition where I placed 6th, and the Rotman International Trading Competition in Toronto where my team I placed 2nd out of 52 Universities across the world. I also spent the summer of 2018 day trading with an online group.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      How do you go about valuing a security; what is your process, the steps you generally take to value a security?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body bg-secondary">
+                    Generally, I look at the fundamentals of a stock; a P/E ratio below the sector average, the price to book ratio to compare with the other companies in the sector, a PEG ratio below 1. Then I also analyse the balance and cash flow statements of the company to complete my fundamental analysis. Once this process is cleared, I look at some technicals to determine my entry point for the stock.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Do you do any programming, and/or are you interested in programming to automate parts of your process?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body bg-secondary">
+                    No programming, but interested in learning how to code for algorithmic trading because there is a large potential to make money, it is very fast paced, accurate and can analyse and make trading decisions faster than any human can manually do.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Would it help if you could create a visualization of assumptions you may have? For example, how the price of stocks are affected by Trump’s tweets.
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body bg-secondary">
+                    Yes, of course that will be useful. News affect different sectors differently, and visualizations will give you an idea of what kind of news impacts these sectors. You can go into specific companies, but generally speaking, Trump’s tweets affect entire sectors at a time, if not the entire economy, such as trade wars with China, which affects everything. 
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      What is your opinion on the project, and do you have any suggestions?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                  <div class="card-body bg-secondary">
+                    It is a good idea, but add technical indicators as part of the screening process for finding stocks. Right now it’s all about fundamental news, tweets, etc, but you should also include technical indicators and tools such as MACD, RSI, fiboncacci retracements, elliot wave.etc.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="modal fade" id="proof" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-notify modal-info" role="document">
+        <!--Content-->
+        <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header bg-primary">
+            <p class="heading lead">Interview Proof</p>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" class="white-text">&times;</span>
+            </button>
+          </div>
+
+          <!--Body-->
+          <div class="modal-body">
+            <img src="img/InterviewProof.JPG" alt="Proof of interview" class="img-fluid">
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer">
+            <a type="button" class="btn btn-outline-info waves-effect" data-dismiss="modal">Close</a>
+          </div>
+        </div>
+        <!--/.Content-->
+      </div>
+    </div>
 
     <!-- Call to Action Section -->
     <section class="page-section bg-dark text-white">

@@ -49,6 +49,9 @@
             <li class="nav-item">
               <a class="nav-link" href="pages/prototype.html">Prototype</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/prototypevideo.html">Prototype Video</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -61,6 +64,13 @@
           <div class="col-lg-10 align-self-end">
             <h1 class="text-uppercase text-white font-weight-bold">Money makes the world go round</h1>
             <hr class="divider my-4">
+            
+            <a href="#headerPopup" id="headerVideoLink" target="_blank" class="btn btn-outline-danger popup-modal">Check out our demo!</a>
+            <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/35hq-JhyyAo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- HEREHERE -->
+
           </div>
           <div class="col-lg-8 align-self-baseline">
             <p class="text-white-75 font-weight-light mb-5">Start making educated investing decisions backed up by data and visualization! Download and customize algorithms with a click of a button!</p>
@@ -394,5 +404,13 @@
 
 
     <script src="js/scripts.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#headerVideoLink').magnificPopup({
+          type:'inline',
+          midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+        });         
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/MoneyWatch/static/css/main.0fd6dca5.chunk.css",
+    "main.js": "/MoneyWatch/static/js/main.e0ee1e20.chunk.js",
+    "main.js.map": "/MoneyWatch/static/js/main.e0ee1e20.chunk.js.map",
+    "runtime~main.js": "/MoneyWatch/static/js/runtime~main.15963d96.js",
+    "runtime~main.js.map": "/MoneyWatch/static/js/runtime~main.15963d96.js.map",
+    "static/css/2.d6d7c54f.chunk.css": "/MoneyWatch/static/css/2.d6d7c54f.chunk.css",
+    "static/js/2.b1e19024.chunk.js": "/MoneyWatch/static/js/2.b1e19024.chunk.js",
+    "static/js/2.b1e19024.chunk.js.map": "/MoneyWatch/static/js/2.b1e19024.chunk.js.map",
+    "index.html": "/MoneyWatch/index.html",
+    "precache-manifest.1602abb3f717beb4a1f1a5a13dc82a05.js": "/MoneyWatch/precache-manifest.1602abb3f717beb4a1f1a5a13dc82a05.js",
+    "service-worker.js": "/MoneyWatch/service-worker.js",
+    "static/css/2.d6d7c54f.chunk.css.map": "/MoneyWatch/static/css/2.d6d7c54f.chunk.css.map",
+    "static/css/main.0fd6dca5.chunk.css.map": "/MoneyWatch/static/css/main.0fd6dca5.chunk.css.map",
+    "static/media/DrumpTonald.png": "/MoneyWatch/static/media/DrumpTonald.160851ae.png",
+    "static/media/InterviewProof.JPG": "/MoneyWatch/static/media/InterviewProof.5ecfe1bf.JPG",
+    "static/media/JeanneChapdelaine.png": "/MoneyWatch/static/media/JeanneChapdelaine.60337e23.png",
+    "static/media/MoneyWatchFinal1.pdf": "/MoneyWatch/static/media/MoneyWatchFinal1.d6848ab0.pdf",
+    "static/media/SteveDaniel.png": "/MoneyWatch/static/media/SteveDaniel.a032df75.png",
+    "static/media/UmairRaja.png": "/MoneyWatch/static/media/UmairRaja.1bd52a82.png"
+  }
+}

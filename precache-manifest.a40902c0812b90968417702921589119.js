@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "563ec866ed6c86ca256152674b92db75",
+    "revision": "d0395310d3a882b77827817acac4fd62",
     "url": "/MoneyWatch/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MoneyWatch/static/css/2.d6d7c54f.chunk.css"
   },
   {
-    "revision": "516ace27096d225cacc8",
+    "revision": "90583e064e933b6fb84a",
     "url": "/MoneyWatch/static/css/main.0fd6dca5.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MoneyWatch/static/js/2.b1e19024.chunk.js"
   },
   {
-    "revision": "516ace27096d225cacc8",
-    "url": "/MoneyWatch/static/js/main.e0ee1e20.chunk.js"
+    "revision": "90583e064e933b6fb84a",
+    "url": "/MoneyWatch/static/js/main.3f92105e.chunk.js"
   },
   {
     "revision": "ac629df03023fa7c1e21",

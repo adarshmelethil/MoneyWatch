@@ -50,32 +50,32 @@ class App extends React.Component {
           {/* <!-- Navigation --> */}
           <nav className="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav" ref={(nav) => { this.nav = nav }}>
             <div className="container">
-              <Link className="navbar-brand js-scroll-trigger nav-button"  to="/" onClick={() => this.scrollOnHome(this.PageTop)}>Money Watch</Link>
-              <Link className="navbar-toggler navbar-toggler-right" to="/" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <Link className="navbar-brand js-scroll-trigger nav-button"  to="/MoneyWatch" onClick={() => this.scrollOnHome(this.PageTop)}>Money Watch</Link>
+              <Link className="navbar-toggler navbar-toggler-right" to="/MoneyWatch" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
               </Link>
               <div className="collapse navbar-collapse" id="navbarResponsive" ref={(navBar) => { this.navBar = navBar }}>
                 <ul className="navbar-nav ml-auto my-2 my-lg-0">
                   <li className="nav-item">
-                    <Link className="nav-link js-scroll-trigger nav-button" to="/" onClick={() => this.scrollOnHome(this.Sections.About)}>About</Link>
+                    <Link className="nav-link js-scroll-trigger nav-button" to="/MoneyWatch" onClick={() => this.scrollOnHome(this.Sections.About)}>About</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link js-scroll-trigger nav-button" to="/" onClick={() => this.scrollOnHome(this.Sections.Services)}>Services</Link>
+                    <Link className="nav-link js-scroll-trigger nav-button" to="/MoneyWatch" onClick={() => this.scrollOnHome(this.Sections.Services)}>Services</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link js-scroll-trigger nav-button" to="/" onClick={() => this.scrollOnHome(this.Sections.Portfolio)}>Personas</Link>
+                    <Link className="nav-link js-scroll-trigger nav-button" to="/MoneyWatch" onClick={() => this.scrollOnHome(this.Sections.Portfolio)}>Personas</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link js-scroll-trigger nav-button" to="/" onClick={() => this.scrollOnHome(this.Sections.Interview)}>Interview</Link>
+                    <Link className="nav-link js-scroll-trigger nav-button" to="/MoneyWatch" onClick={() => this.scrollOnHome(this.Sections.Interview)}>Interview</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link nav-button" to="/UserResearch">User Research</Link>
+                    <Link className="nav-link nav-button" to="/MoneyWatch/UserResearch">User Research</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link nav-button" to="/Stakeholders">Stakeholders</Link>
+                    <Link className="nav-link nav-button" to="/MoneyWatch/Stakeholders">Stakeholders</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link nav-button" to="/Prototype" href="pages/prototype.html">Prototype</Link>
+                    <Link className="nav-link nav-button" to="/MoneyWatch/Prototype" href="pages/prototype.html">Prototype</Link>
                   </li>
                 </ul>
               </div>
@@ -83,24 +83,24 @@ class App extends React.Component {
           </nav>
 
           {/* <Route exact path="/" component={Home} /> */}
-          <Route exact path="/" 
+          <Route exact path="/MoneyWatch" 
             render={(routeProps) => (
               <Home {...routeProps} Sections={this.Sections}/>
             )}
           />
-          <Route exact path="/Stakeholders" 
+          <Route exact path="/MoneyWatch/Stakeholders" 
             render={(routeProps) => (
               <Stakeholders {...routeProps}/>
             )}
           />
 
-          <Route exact path="/UserResearch" 
+          <Route exact path="/MoneyWatch/UserResearch" 
             render={(routeProps) => (
               <UserResearch {...routeProps}/>
             )}
           />
 
-          <Route exact path="/Prototype" 
+          <Route exact path="/MoneyWatch/Prototype" 
             render={(routeProps) => (
               <Prototype {...routeProps}/>
             )}

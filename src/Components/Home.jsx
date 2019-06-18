@@ -156,7 +156,7 @@ class Home extends React.Component {
                   <h1 className="text-uppercase text-white font-weight-bold">Money makes the world go round</h1>
                   <hr className="divider my-4"/>
                   
-                  <button className="btn btn-outline-danger popup-modal" target="_blank" id="headerVideoLink" href="#headerPopup" >HiFiPrototype</button>
+                  <button className="btn btn-outline-danger popup-modal" target="_blank" id="headerVideoLink" href="#headerPopup" >Final Report!</button>
                   {/*
                   <button href="#headerPopup" id="headerVideoLink" target="_blank" className="btn btn-outline-danger popup-modal">Final Report!</button>
 

@@ -8,7 +8,9 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Home from './Components/Home';
 import Stakeholders from './Components/Stakeholders';
 import UserResearch from './Components/UserResearch';
-import Prototype from './Components/Prototype';
+import LoFiPrototype from './Components/LoFiPrototype';
+import HiFiPrototype from './Components/HiFiPrototype';
+import FinalReport from './Components/FinalReport';
 
 class App extends React.Component {
   constructor(props) {
@@ -75,7 +77,10 @@ class App extends React.Component {
                     <Link className="nav-link nav-button" to="/MoneyWatch/Stakeholders">Stakeholders</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link nav-button" to="/MoneyWatch/Prototype" href="pages/prototype.html">Prototype</Link>
+                    <Link className="nav-link nav-button" to="/MoneyWatch/LoFiPrototype">LoFiPrototype</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link nav-button" to="/MoneyWatch/HiFiPrototype">HiFiPrototype</Link>
                   </li>
                 </ul>
               </div>
@@ -100,9 +105,19 @@ class App extends React.Component {
             )}
           />
 
-          <Route exact path="/MoneyWatch/Prototype" 
+          <Route exact path="/MoneyWatch/LoFiPrototype" 
             render={(routeProps) => (
-              <Prototype {...routeProps}/>
+              <LoFiPrototype {...routeProps}/>
+            )}
+          />
+          <Route exact path="/MoneyWatch/HiFiPrototype" 
+            render={(routeProps) => (
+              <HiFiPrototype {...routeProps}/>
+            )}
+          />
+          <Route exact path="/MoneyWatch/FinalReport" 
+            render={(routeProps) => (
+              <FinalReport {...routeProps}/>
             )}
           />
           

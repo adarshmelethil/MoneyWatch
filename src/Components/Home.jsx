@@ -1,4 +1,6 @@
 import React from 'react';
+import { Route, Link } from 'react-router-dom';
+
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import 'react-fancybox/lib/fancybox.css'
 
@@ -9,6 +11,15 @@ import DrumpTonald from '../img/personas/DrumpTonald.png';
 import JeanneChapdelaine from '../img/personas/JeanneChapdelaine.png';
 import SteveDaniel from '../img/personas/SteveDaniel.png';
 
+// import FinalReport from './FinalReport';
+import MoneyWatchFinalReport from '../pdf/MoneyWatchFinalReport.pdf';
+
+
+import "react-pdf/dist/Page/AnnotationLayer.css";
+import { Document, Page, pdfjs } from 'react-pdf';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
+
 const TRANSITION_TIME = 0;
 
 class Home extends React.Component {
@@ -18,7 +29,9 @@ class Home extends React.Component {
     this.state = {
       showDrump: false,
       showSteve: false,
-      showJeanne:false
+      showJeanne:false,
+      numPages: null,
+      pageNumber: 1
     };
 
     this.openDrump = this.openDrump.bind(this);
@@ -32,6 +45,26 @@ class Home extends React.Component {
     this.openJeanne = this.openJeanne.bind(this);
     this.closeJeanne = this.closeJeanne.bind(this);
     this.handleJeanneClick = this.handleJeanneClick.bind(this);
+  }
+ 
+  onDocumentLoadSuccess = ({ numPages }) => {
+    this.setState({ numPages });
+  }
+
+  onButtonClicked = ({ pageNumber }) => {
+    this.setState({
+      pageNumber: pageNumber
+    })
+  }
+  PreviousPage = ({}) => {
+    if (this.state.pageNumber > 1) {
+      this.setState(prevState => ({ pageNumber: prevState.pageNumber - 1 }))
+    }
+  }
+  NextPage = ({}) => {
+    if (this.state.pageNumber < this.state.numPages) {
+      this.setState(prevState => ({ pageNumber: prevState.pageNumber + 1 }))
+    }
   }
 
   openDrump() {
@@ -86,9 +119,35 @@ class Home extends React.Component {
   }
 
   render() {
+    const { pageNumber, numPages } = this.state;
 
     return (
       <div>
+        <div id="headerPopup" className="mfp-hide">
+          <Document
+            file={MoneyWatchFinalReport}
+            onLoadError={(err) => console.log(err)}
+            onLoadSuccess={this.onDocumentLoadSuccess}
+            onItemClick={this.onButtonClicked}
+          >
+            <Page pageNumber={pageNumber} />
+          </Document>
+          <div className="container">
+            <div className="row">
+              <div className="col-sm">
+                <button className="btn btn-primary btnPrevious" onClick={this.PreviousPage}>Previous</button>
+              </div>
+              <div className="col-sm">
+                <p className="alert alert-primary">Page {pageNumber} of {numPages}</p>
+              </div>
+              <div className="col-sm">
+                <button className="btn btn-primary btnNext" onClick={this.NextPage}>Next</button>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
         {/* <!-- Masthead --> */}
           <header className="masthead">
             <div className="container h-100">
@@ -97,10 +156,20 @@ class Home extends React.Component {
                   <h1 className="text-uppercase text-white font-weight-bold">Money makes the world go round</h1>
                   <hr className="divider my-4"/>
                   
-                  <button href="#headerPopup" id="headerVideoLink" target="_blank" className="btn btn-outline-danger popup-modal">Check out our demo!</button>
+                  <button className="btn btn-outline-danger popup-modal" target="_blank" id="headerVideoLink" href="#headerPopup" >HiFiPrototype</button>
+                  {/*
+                  <button href="#headerPopup" id="headerVideoLink" target="_blank" className="btn btn-outline-danger popup-modal">Final Report!</button>
+
                   <div id="headerPopup" className="mfp-hide embed-responsive embed-responsive-21by9">
                     <iframe title="MoneyWatchDemo" width="560" height="315" src="https://www.youtube.com/embed/35hq-JhyyAo" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                   </div>
+                  
+                  <Route exact path="/MoneyWatch/FinalReport" 
+                    render={(routeProps) => (
+                      <FinalReport {...routeProps}/>
+                    )}
+                  />
+                  */}
 
                 </div>
                 <div className="col-lg-8 align-self-baseline">

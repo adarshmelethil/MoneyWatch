@@ -6,7 +6,7 @@ import { Document, Page, pdfjs } from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 
-class Prototype extends React.Component {
+class LoFiPrototype extends React.Component {
   state = {
     numPages: null,
     pageNumber: 1,
@@ -49,4 +49,4 @@ class Prototype extends React.Component {
   }
 }
 
-export default Prototype;
+export default LoFiPrototype;

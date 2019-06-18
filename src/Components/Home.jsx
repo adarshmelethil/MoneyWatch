@@ -17,6 +17,8 @@ import MoneyWatchFinalReport from '../pdf/MoneyWatchFinalReport.pdf';
 
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import { Document, Page, pdfjs } from 'react-pdf';
+import { PDFDownloadLink } from '@react-pdf/renderer'
+
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 
@@ -138,6 +140,9 @@ class Home extends React.Component {
                 <button className="btn btn-primary btnPrevious" onClick={this.PreviousPage}>Previous</button>
               </div>
               <div className="col-sm">
+                <p className="alert alert-primary"><a href={MoneyWatchFinalReport}>Download</a></p>
+              </div>
+              <div className="col-sm">
                 <p className="alert alert-primary">Page {pageNumber} of {numPages}</p>
               </div>
               <div className="col-sm">
@@ -145,6 +150,7 @@ class Home extends React.Component {
               </div>
             </div>
           </div>
+          
           
           
         </div>

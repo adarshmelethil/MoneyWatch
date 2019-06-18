@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://adarshmelethil.github.io/MoneyWatch",
   "dependencies": {
+    "@react-pdf/renderer": "^1.6.2",
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-addons-css-transition-group": "^15.6.2",

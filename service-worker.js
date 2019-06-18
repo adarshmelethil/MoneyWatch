@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/MoneyWatch/precache-manifest.7044d68c88b0234943520058bc558757.js"
+  "/MoneyWatch/precache-manifest.9fa7fa375385e2d04d3fed9573a74b45.js"
 );
 
 self.addEventListener('message', (event) => {
